@@ -11,63 +11,13 @@
     <hr>
     <p> this is my first web page </p>
     <p>this is second web page</p>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMM Tube</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-        }
+<form>
+         <input type="email"   placeholder="email" ><br>
+         <input type="password"  placeholder="password"><br>
+         <input type="submit"><br>
+         <input type="reset"> <br>
 
-        #youtubeForm {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        input, button {
-            margin-bottom: 10px;
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-        {body H2 =SPACE 20PX
-
-
-        }
-    </style>
-</head>
-<body  >
-
-    <div id="youtubeForm">
-        <h2>AMM Tube</h2>
-        <label for="videoUrl">رابط الفيديو:</label>
-        <input type="text" id="videoUrl" placeholder="أدخل رابط الفيديو">
-
-        <label for="videoTitle">عنوان الفيديو:</label>
-        <input type="text" id="videoTitle" placeholder="أدخل عنوان الفيديو">
-
-        <label for="videoDescription">وصف الفيديو:</label>
-        <textarea id="videoDescription" placeholder="أدخل وصف الفيديو"></textarea>
-
-        <button onclick="submitForm()">نشر الفيديو</button>
-    </div>
-
-    <script>
-        function submitForm() {
-            const videoUrl = document.getElementById('videoUrl').value;
-            const videoTitle = document.getElementById('videoTitle').value;
-            const videoDescription = document.getElementById('videoDescription').value;
-
-        
-
-            alert(`تم نشر الفيديو!\n\nرابط الفيديو: ${videoUrl}\nعنوان الفيديو: ${videoTitle}\nوصف الفيديو: ${videoDescription}`);
-        }
-    </script>
+</form>
 
 </body>
 </html>
